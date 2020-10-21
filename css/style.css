@@ -51,7 +51,7 @@
   --border-color: #efefef;
   --grey-bg: #f4f4f4;
   --red: #c41429;
-  --transition: all 0.2s ease;
+  --transition: 0.2s ease;
 }
 
 /* fonts */
@@ -394,6 +394,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slider_item__presentation-wrap {
@@ -457,5 +460,180 @@ a {
 .slider_item__img--three {
   background: url(../img/slider/slide-3.jpg);
   border: none;
+}
+
+/* Products */
+.products {
+  background-color: #F4F4F4;
+}
+
+.products .container {
+  padding: 80px 10px;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  min-height: 555px;
+}
+
+.products-item--one {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.products-item--two {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / span 3;
+}
+
+.products-item--three {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / span 3;
+}
+
+.products-item--four {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-column: 10 / span 3;
+}
+
+.products-item--five {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 5;
+  grid-column: 4 / span 5;
+}
+
+.products-item--more {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9 / span 4;
+}
+
+.products_title {
+  position: relative;
+}
+
+.products_title::after {
+  position: absolute;
+  width: 0%;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  border-top: 3px solid #fff;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.products-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.products-link::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.products-link:hover, .products-link:focus {
+  -webkit-transform: scale(0.98, 0.98);
+          transform: scale(0.98, 0.98);
+}
+
+.products-link:hover .products_title::after, .products-link:focus .products_title::after {
+  width: 100%;
+}
+
+.products-link:active {
+  -webkit-transform: scale(0.96, 0.96);
+          transform: scale(0.96, 0.96);
+}
+
+.products-link--one {
+  background-image: url(../img/categories/category-1.jpg);
+}
+
+.products-link--two {
+  background-image: url(../img/categories/category-2.jpg);
+}
+
+.products-link--three {
+  background-image: url(../img/categories/category-3.jpg);
+}
+
+.products-link--four {
+  background-image: url(../img/categories/category-4.jpg);
+}
+
+.products-link--five {
+  background-image: url(../img/categories/category-5.jpg);
+}
+
+.products-link--more {
+  background: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: initial;
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.products-link--more::before {
+  content: none;
+}
+
+.products-link--more span {
+  margin-right: 25px;
+}
+
+.products-link--more svg {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+.products-link--more:hover svg line,
+.products-link--more:hover svg path,
+.products-link--more:focus svg line,
+.products-link--more:focus svg path {
+  stroke: var(--red);
 }
 /*# sourceMappingURL=style.css.map */
