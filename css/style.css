@@ -233,6 +233,16 @@ a {
 .main_hedader-logo {
   display: block;
   margin-right: 70px;
+  -webkit-transition: 0;
+  transition: 0;
+}
+
+.main_hedader-logo:hover, .main_hedader-logo:focus {
+  opacity: .6;
+}
+
+.main_hedader-logo:active {
+  opacity: .4;
 }
 
 .main_header__list {

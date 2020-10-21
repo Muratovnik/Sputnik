@@ -173,6 +173,16 @@ a {
 .main_hedader-logo {
   display: block;
   margin-right: 70px;
+  transition: 0;
+
+  &:hover,
+  &:focus{
+    opacity: .6;
+  }
+
+  &:active{
+    opacity: .4;
+  }
 }
 
 .main_header__list {
