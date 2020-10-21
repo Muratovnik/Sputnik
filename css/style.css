@@ -636,4 +636,59 @@ a {
 .products-link--more:focus svg path {
   stroke: var(--red);
 }
+
+/* About us */
+.about_us .container {
+  padding: 80px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_us__video {
+  position: relative;
+  width: 555px;
+  height: 420px;
+  background: url(../img/video-cover.jpg), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: url(../img/video-cover.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.about_us__video::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 70px;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  background: url(../img/play.svg) no-repeat center;
+  opacity: 0.7;
+}
+
+.about_us__text {
+  width: 460px;
+  margin-right: 20px;
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.about_us__text p {
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
+.about_us__text p:last-child {
+  margin-bottom: 0;
+}
+
+.about_us__title {
+  margin-top: 23px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
 /*# sourceMappingURL=style.css.map */
