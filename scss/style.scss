@@ -911,6 +911,10 @@ a {
 
 /* ! Разобраться с багом исчезающих картинок */
 
+.photogallery {
+  margin-bottom: 80px;
+}
+
 .photogallery__list {
   @include df-space-b;
   @include clear-list;
@@ -925,3 +929,35 @@ a {
 
 
 /* END our_inst */
+
+
+
+
+
+
+
+/* map */
+
+.map__title {
+  margin-bottom: 40px;
+}
+
+.map__wrap {
+  min-height: 457px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    z-index: -1;
+  }
+
+  iframe {
+    width: 100%;
+    height: 457px;
+  }
+}
+
+/* END map */
