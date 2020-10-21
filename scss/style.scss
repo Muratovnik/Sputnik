@@ -58,6 +58,12 @@
   display: none !important;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
 
 body {
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
@@ -815,3 +821,86 @@ a {
 }
 
 /* END subscribe */
+
+
+/* FAQ */
+
+.faq {
+  background-color: #fff;
+  .container {
+    padding: 80px 10px;
+  }
+}
+
+.faq__list {
+  @include clear-list;
+}
+
+.faq__headline {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.faq__item {
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.faq__toggle {
+  display: none;
+
+  &:checked ~ .faq__content{
+    display: block;
+  }
+
+  &:checked ~ .faq__title span {
+    color: var(--red);
+  }
+
+  &:checked ~ .faq__title i {
+    transform: rotate(45deg);
+  }
+}
+
+.faq__title {
+  @include df-space-b;
+  align-items: center;
+  padding: 18px 0;
+
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  transition: var(--transition);
+}
+
+.faq__title-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: #EFEFEF;
+  background-image: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: center;
+
+  transition: var(--transition);
+}
+
+/* *Сделать плавное появление faq__content */
+
+.faq__content {
+  display: none;
+  max-width: 1050px;
+
+  margin-bottom: 30px;
+  
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+
+
+/* END FAQ */
