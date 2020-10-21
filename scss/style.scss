@@ -106,7 +106,7 @@ a {
 }
 
 .btn {
-  max-width: 220px;
+  width: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -737,10 +737,81 @@ a {
   font-size: 22px;
   margin-right: 15px;
 
-  &--discount{
+  &--discount {
     font-size: 14px;
     line-height: 16px;
     text-decoration-line: line-through;
     color: var(--text-color-light);
   }
 }
+
+
+
+/* subscribe */
+
+.subscribe {
+  background-color: var(--red);
+  color: #FFFFFF;
+  .container {
+    padding: 45px 10px 60px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.subscribe__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.subscribe__information {
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.subscribe__form {
+  display: flex;
+ input {
+   border: none;
+ }
+}
+
+.subscribe__email {
+  display: block;
+
+  min-width: 290px;
+  padding: 16px 23px 13px 23px;
+  margin-right: 35px;
+
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  ::placeholder {
+    color: var(--text-color-light);
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.subscribe__btn {
+  display: block;
+}
+
+/* END subscribe */
