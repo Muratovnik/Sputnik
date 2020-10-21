@@ -1041,4 +1041,26 @@ a {
 }
 
 /* END FAQ */
+/* our_inst */
+/* ! Разобраться с багом исчезающих картинок */
+.photogallery__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photogallery__item {
+  width: 165px;
+  font-size: 0;
+  display: block !important;
+  overflow: hidden;
+}
+
+/* END our_inst */
 /*# sourceMappingURL=style.css.map */
