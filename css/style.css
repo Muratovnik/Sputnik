@@ -91,6 +91,10 @@
           box-sizing: border-box;
 }
 
+.hidden {
+  display: none !important;
+}
+
 body {
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
@@ -139,10 +143,10 @@ a {
 }
 
 .btn {
-  min-width: 220px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  max-width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -375,5 +379,83 @@ a {
   color: #fff;
   background-color: var(--red);
   border-radius: 10px;
+}
+
+/* Main-content */
+/* Slider */
+.slider_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider_item {
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider_item__presentation-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px 0;
+  width: 50%;
+}
+
+.slider_title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+  margin-bottom: 36px;
+  color: var(--text-color);
+}
+
+.slider_title__big-text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.slider_title__small-text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.slider_item__img {
+  width: 555px;
+  height: 415px;
+  border: 1px solid var(--text-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider_item__img--one {
+  background: url(../img/slider/slide-1.jpg);
+  border: none;
+}
+
+.slider_item__img--two {
+  background: url(../img/slider/slide-2.jpg);
+  border: none;
+}
+
+.slider_item__img--three {
+  background: url(../img/slider/slide-3.jpg);
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
