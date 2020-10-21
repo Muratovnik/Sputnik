@@ -589,3 +589,52 @@ a {
   font-size: 40px;
   line-height: 47px;
 }
+
+
+/* Features */
+
+.features {
+  background: #F4F4F4;
+  .container {
+    padding: 60px 10px;
+  }
+}
+
+.features__list {
+  @include clear-list;
+  display: flex;
+}
+
+.features__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 33%;
+
+  text-align: center;
+}
+
+.features__img {
+  margin-bottom: 15px;
+
+  width: 52px;
+  height: 52px;
+  background-position: center;
+  background-size: initial;
+
+  &--delivery {
+    background-image: url(../img/truck.svg);
+  }
+  &--payment {
+    background-image: url(../img/cards.svg);
+  }
+  &--return {
+    background-image: url(../img/time.svg);
+  }
+}
+
+.features__text {
+  margin: 0;
+}
