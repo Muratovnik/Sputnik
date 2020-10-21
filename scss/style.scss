@@ -1,3 +1,6 @@
+@import 'mixins.scss';
+@import 'keyframes.scss';
+
 /* variables */
 :root {
   --text-color: #222;
@@ -5,7 +8,10 @@
   --border-color: #efefef;
   --grey-bg: #f4f4f4;
   --red: #c41429;
+  --transition: all 0.2s ease;
 }
+
+
 
 /* fonts */
 @font-face {
@@ -57,7 +63,7 @@ body {
 
 a {
   color: var(--red);
-  transition: all 0.2s ease;
+  transition: var(--transition);
 }
 
 .container {
@@ -148,7 +154,144 @@ a {
 
 /* header */
 
-.main_header{
-  
+.main_header {
+  border: 1px solid #EFEFEF;
+
+  & .container {
+    @include df-space-b;
+    padding: 15px 10px;
+  }
 }
 
+.main_header__navigation {
+  @include df-space-b;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.main_hedader-logo {
+  display: block;
+  margin-right: 70px;
+}
+
+.main_header__list {
+  @include clear-list;
+
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.main_header__item{
+  margin-right: 35px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+
+.main_header__link {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+
+  &::after{
+    position: absolute;
+    width: 0%;
+
+    content: "";
+    bottom: -5px;
+    left: 0;
+
+    border-top: 2px solid var(--red);
+    transition: width 0.2s ease;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--red);
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+
+.main-header__right{
+  display: flex;
+  align-items: center;
+}
+
+.main-header__tel{
+  margin-right: 20px;
+  padding-left: 25px;
+
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+
+    width: 17px;
+    height: 17px;
+
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: initial;
+  }
+  
+  &:hover,
+  &:focus {
+    &::after{
+      animation-name: tel;
+      animation-duration: 0.4s;
+    }
+  }
+}
+
+.main_header__right-cart{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-img {
+    position: relative;
+    width: 32px;
+      &::after {
+        position: absolute;
+        content: "3";
+    
+        top: -4px;
+        right: 4px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 11px;
+        line-height: 13px;
+    
+        width: 16px;
+        height: 16px;
+    
+        color: #fff;
+        background-color: var(--red);
+        border-radius: 10px;
+    }
+  }
+}
