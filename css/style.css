@@ -821,7 +821,6 @@ a {
   font-size: 12px;
   line-height: 14px;
   color: #fff;
-  background: var(--red);
   background: linear-gradient(-65deg, transparent 10px, var(--red) 0);
 }
 
@@ -837,6 +836,7 @@ a {
 }
 
 .hits__title {
+  position: relative;
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -846,6 +846,25 @@ a {
   font-weight: 400;
   font-size: 18px;
   color: var(--text-color);
+}
+
+.hits__title::after {
+  position: absolute;
+  width: 0%;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  border-top: 2px solid var(--text-color);
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.hits__title:hover, .hits__title:focus {
+  color: var(--text-color);
+}
+
+.hits__title:hover::after, .hits__title:focus::after {
+  width: 100%;
 }
 
 .hits__price-wrap {
