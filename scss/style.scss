@@ -330,11 +330,12 @@ a {
 
 .slider_item {
   padding: 60px 0;
-  @include df-space-b;
+  display: flex !important;
+  justify-content: space-between;
+  outline: none;
 }
 
 .slider_item__presentation-wrap{
-  display: flex;
   flex-direction: column;
   padding: 60px 0;
   width: 50%;
@@ -367,6 +368,7 @@ a {
 .slider_item__img {
   width: 555px;
   height: 415px;
+  margin-right: 2px; // Исправляет баг с вылезающей картинкой слайдера
 
   border: 1px solid var(--text-color);
   background-size: cover;
@@ -386,6 +388,67 @@ a {
     border: none;
   }
 }
+
+.slick-list {
+  position: relative;
+}
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+
+  @include clear-list;
+
+  bottom: 60px;
+  left: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 22px;
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+  }
+}
+
+.slick-dots li.slick-active{
+  transform: scale(1.4, 1.4);
+
+
+  &::before {
+    content: '(';
+    color: #000000;
+  }
+  &::after {
+    content: ')';
+    color: #000000;
+  }
+
+  button {
+    color: #000000 !important;
+  }
+}  
+
+.slick-dots button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+
+  &::before {
+    content: "0";
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--text-color);
+    outline: none;
+  }
+}
+
 
 
 /* Products */

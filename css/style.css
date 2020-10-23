@@ -397,18 +397,16 @@ a {
 
 .slider_item {
   padding: 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  outline: none;
 }
 
 .slider_item__presentation-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -447,6 +445,7 @@ a {
 .slider_item__img {
   width: 555px;
   height: 415px;
+  margin-right: 2px;
   border: 1px solid var(--text-color);
   background-size: cover;
   background-position: center;
@@ -466,6 +465,68 @@ a {
 .slider_item__img--three {
   background: url(../img/slider/slide-3.jpg);
   border: none;
+}
+
+.slick-list {
+  position: relative;
+}
+
+.slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  bottom: 60px;
+  left: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin-right: 22px;
+  font-size: 18px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.slick-dots li.slick-active {
+  -webkit-transform: scale(1.4, 1.4);
+          transform: scale(1.4, 1.4);
+}
+
+.slick-dots li.slick-active::before {
+  content: '(';
+  color: #000000;
+}
+
+.slick-dots li.slick-active::after {
+  content: ')';
+  color: #000000;
+}
+
+.slick-dots li.slick-active button {
+  color: #000000 !important;
+}
+
+.slick-dots button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--text-color-light);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slick-dots button::before {
+  content: "0";
+}
+
+.slick-dots button:hover, .slick-dots button:focus {
+  color: var(--text-color);
+  outline: none;
 }
 
 /* Products */
