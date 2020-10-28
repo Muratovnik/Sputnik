@@ -338,11 +338,11 @@ a {
   outline: none;
 }
 
-.slider_item__img {
+.slider__item__img {
   width: 50%;
 }
 
-.slider_item__presentation-wrap{
+.slider__information-wrap{
   height: max-content;
   padding-bottom: 25px;
 }
@@ -1307,22 +1307,24 @@ a {
 
   // SLIDER
 
-  .slider_item {
+  .slider__item {
     display: flex;
   }
 
-  .slider_title {
-    &__big-text {
+  .slider__title {
+
+    &--big-text {
       font-size: 36px;
     }
-    &__small-text {
+
+    &--small-text {
       display: block;
       font-size: 16px;
     }
-    
   }
 
   .slider__img-wrap {
+    width: 50%;
     height: auto;
 
     img {

@@ -10,7 +10,7 @@ $(function() {
     // menu toggle  
   $('.js-menu-toggle').on('click', function() {
     $(this).toggleClass('is-active');
-    $('.main_header__list').toggleClass('is-open');
+    $('.main-header__list').toggleClass('is-open');
   });
 });
   
