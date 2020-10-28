@@ -1180,6 +1180,7 @@ a {
 }
 
 .map__wrap img {
+  max-height: 457px;
   position: absolute;
   z-index: -1;
   width: 100%;
