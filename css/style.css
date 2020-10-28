@@ -873,6 +873,7 @@ a {
 }
 
 .hits__img-link img {
+  width: 100%;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -1166,6 +1167,7 @@ a {
 .map__wrap img {
   position: absolute;
   z-index: -1;
+  width: 100%;
 }
 
 .map__wrap [class*="ymaps-2"][class*="-ground-pane"] {
@@ -1309,9 +1311,6 @@ a {
 
 /* End Footer */
 @media screen and (max-width: 1160px) {
-  img {
-    width: 100%;
-  }
   .main_header__navigation {
     margin-right: 35px;
   }
@@ -1325,7 +1324,7 @@ a {
     left: 5px;
   }
   .about_us__text {
-    max-width: 410px;
+    max-width: 500px;
   }
   .main_footer__item {
     margin-right: 25px;
@@ -1336,9 +1335,12 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  :root {
+    --safe-pad: 20px;
+  }
   *.container {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
+    padding-right: var(--safe-pad) !important;
+    padding-left: var(--safe-pad) !important;
   }
   .main_header__navigation {
     -webkit-box-pack: start;
