@@ -1161,8 +1161,13 @@ a {
   margin-bottom: 40px;
 }
 
+.map__title--city {
+  color: var(--red);
+  font-weight: 400;
+}
+
 .map__wrap {
-  min-height: 457px;
+  height: 457px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1493,6 +1498,9 @@ a {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 20px;
+  }
+  .map__wrap {
+    height: 320px;
   }
   .main_footer__navigation, .main_footer__logo, .main_footer__list {
     display: none;
