@@ -767,7 +767,7 @@ a {
 }
 
 .features .container {
-  padding: 60px 10px;
+  padding: 0 var(--safe-pad);
 }
 
 .features__list {
@@ -787,9 +787,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1461,10 +1458,13 @@ a {
   .about_us__title {
     margin-bottom: 15px;
   }
-  .main_header__menu-toggle {
-    display: block;
-    outline: none;
-    margin-left: -15px;
+  .features__img {
+    margin-bottom: 5px;
+  }
+  .features__text {
+    font-size: 14px;
+    max-width: 190px;
+    margin: 0 auto;
   }
   .main_footer__navigation, .main_footer__logo, .main_footer__list {
     display: none;
