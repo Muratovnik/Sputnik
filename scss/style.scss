@@ -337,7 +337,7 @@ a {
 }
 
 .slider_item {
-  padding: 60px 0;
+  padding: 60px 2px;
   display: flex !important;
   justify-content: space-between;
   outline: none;
@@ -376,7 +376,6 @@ a {
 .slider_item__img {
   width: 555px;
   height: 415px;
-  margin-right: 2px; // Исправляет баг с вылезающей картинкой слайдера
 
   background-size: cover;
   background-position: center;

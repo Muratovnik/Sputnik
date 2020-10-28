@@ -401,7 +401,7 @@ a {
 }
 
 .slider_item {
-  padding: 60px 0;
+  padding: 60px 2px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -450,7 +450,6 @@ a {
 .slider_item__img {
   width: 555px;
   height: 415px;
-  margin-right: 2px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
