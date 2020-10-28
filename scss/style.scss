@@ -600,7 +600,7 @@ a {
 .about_us {
   .container {
     padding: 0 var(--safe-pad);
-    @include df-space-b;
+    display: flex;
   }
 }
 
@@ -627,11 +627,13 @@ a {
 }
 
 .about_us__text {
-  width: 460px;
-  margin-right: 20px;
+  width: 560px;
   color: var(--text-color);
   font-size: 18px;
   line-height: 1.4;
+  padding-left: 100px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 
   p {
     margin: 0;
@@ -644,7 +646,7 @@ a {
 }
 
 .about_us__title {
-  margin-top: 23px;
+  margin: 0;
   margin-bottom: 30px;
 
   font-weight: 500;
