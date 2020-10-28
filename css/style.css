@@ -1326,6 +1326,11 @@ a {
 }
 
 /* End Footer */
+/* -----------------
+-----------------
+    Responsive
+-----------------
+----------------- */
 @media screen and (max-width: 1160px) {
   .main-header .container {
     padding: 10px var(--safe-pad);
