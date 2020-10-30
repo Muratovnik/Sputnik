@@ -1356,11 +1356,6 @@ a {
   .main-header .container {
     padding: 10px var(--safe-pad);
   }
-  .main-header__menu-toggle {
-    display: block;
-    margin-left: -15px;
-    margin-right: 10px;
-  }
   .main-header__navigation {
     margin-right: 35px;
   }
@@ -1399,6 +1394,11 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+  .main-header__menu-toggle {
+    display: block;
+    margin-left: -15px;
+    margin-right: 10px;
   }
   .main-header__list {
     z-index: 1;

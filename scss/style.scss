@@ -1243,12 +1243,6 @@ a {
     }
   }
 
-  .main-header__menu-toggle {
-    display: block;
-    margin-left: -15px;
-    margin-right: 10px;
-  }
-
   .main-header__navigation {
     margin-right: 35px;
   }
@@ -1303,6 +1297,12 @@ a {
 
   .main-header__navigation {
     justify-content: start;
+  }
+
+  .main-header__menu-toggle {
+    display: block;
+    margin-left: -15px;
+    margin-right: 10px;
   }
 
   .main-header__list {
