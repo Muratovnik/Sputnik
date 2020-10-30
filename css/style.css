@@ -734,6 +734,16 @@ a {
   left: calc(50% - 35px);
   background: url(../img/play.svg) no-repeat center;
   opacity: 0.7;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.about_us__video:hover {
+  cursor: pointer;
+}
+
+.about_us__video:hover::after {
+  opacity: 0.9;
 }
 
 .about_us__text {
