@@ -1129,7 +1129,7 @@ a {
   max-width: 1050px;
   margin-bottom: 30px;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
