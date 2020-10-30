@@ -1555,10 +1555,47 @@ a {
   
   // END HEADER
 
+
+
   // SLIDER
 
-  
+  .slider__item {
+    flex-direction: column-reverse;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
 
+  .slider__img-wrap {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .slider__information-wrap {
+    padding-bottom: 0;
+  }
+
+  .slider__title {
+
+    &--big-text {
+      font-size: 30px;
+    }
+
+    &--small-text {
+      display: block;
+      font-size: 14px;
+    }
+  }
+
+  .slick-dots {
+    position: static;
+    display: flex;
+    justify-content: center;
+
+    padding: 0 var(--safe-pad);
+    margin-bottom: 20px;
+  }
+  
   // END SLIDER
 
   // PRODUCTS
