@@ -270,7 +270,8 @@ a {
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     img {
       animation-name: tel;
       animation-duration: 0.4s;
@@ -584,6 +585,11 @@ a {
     &:focus svg line,
     &:focus svg path {
       stroke: var(--red);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--red);
     }
   }
 }
@@ -1600,7 +1606,26 @@ a {
 
   // PRODUCTS
 
+  .products__list {
+    display: block;
+
+  }
   
+  .products__item {
+    display: block;
+    height: 220px;
+    margin-bottom: 15px;
+
+    &--more {
+      height: auto;
+    }
+  }
+
+  .products__link {
+    &--more {
+      justify-content: space-between;
+    }
+  }
 
   // END PRODUCTS
 

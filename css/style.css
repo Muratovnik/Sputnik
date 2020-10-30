@@ -335,7 +335,7 @@ a {
   height: 17px;
 }
 
-.main-header__tel:hover img, .main-header__tel:focus img {
+.main-header__tel:hover img, .main-header__tel:focus img, .main-header__tel:active img {
   -webkit-animation-name: tel;
           animation-name: tel;
   -webkit-animation-duration: 0.4s;
@@ -685,6 +685,10 @@ a {
 .products__link--more:focus svg line,
 .products__link--more:focus svg path {
   stroke: var(--red);
+}
+
+.products__link--more:hover, .products__link--more:focus {
+  color: var(--red);
 }
 
 /* About us */
@@ -1613,6 +1617,22 @@ a {
             justify-content: center;
     padding: 0 var(--safe-pad);
     margin-bottom: 20px;
+  }
+  .products__list {
+    display: block;
+  }
+  .products__item {
+    display: block;
+    height: 220px;
+    margin-bottom: 15px;
+  }
+  .products__item--more {
+    height: auto;
+  }
+  .products__link--more {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */
