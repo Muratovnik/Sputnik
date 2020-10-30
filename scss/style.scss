@@ -598,7 +598,7 @@ a {
 /* About us */
 
 
-.about_us {
+.about-us {
   .container {
     padding: 0 var(--safe-pad);
     display: flex;
@@ -606,7 +606,7 @@ a {
   }
 }
 
-.about_us__video {
+.about-us__video {
   position: relative;
   flex: 1;
   height: auto;
@@ -657,7 +657,7 @@ a {
   }
 }
 
-.about_us__text {
+.about-us__text {
   flex: 1;
   color: var(--text-color);
   font-size: 18px;
@@ -676,7 +676,7 @@ a {
   }
 }
 
-.about_us__title {
+.about-us__title {
   margin: 0;
   margin-bottom: 30px;
 }
@@ -1265,7 +1265,7 @@ a {
     left: 5px;
   }
 
-  .about_us__text {
+  .about-us__text {
     max-width: 500px;
   }
 
@@ -1413,13 +1413,13 @@ a {
 
   // END PRODUCTS
 
-  // ABOUT_US
+  // about-us
 
-  .about_us__video {
+  .about-us__video {
 
   }
 
-  .about_us__text {
+  .about-us__text {
     padding-left: 30px;
     padding-top: 0;
     padding-bottom: 0;
@@ -1430,11 +1430,11 @@ a {
     }
   }
 
-  .about_us__title {
+  .about-us__title {
     margin-bottom: 15px;
   }
 
-  // END ABOUT_US
+  // END about-us
 
 
   // features
@@ -1632,23 +1632,23 @@ a {
 
   // END PRODUCTS
 
-  // ABOUT_US
+  // about-us
 
-  .about_us {
+  .about-us {
     .container {
       flex-direction: column;
     }
   }
 
-  .about_us__video {
+  .about-us__video {
     margin-bottom: 10px;
   }
 
-  .about_us__text {
+  .about-us__text {
     padding-left: 0;
   }
 
-  // END ABOUT_US
+  // END about-us
 
 
   // features

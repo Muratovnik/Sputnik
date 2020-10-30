@@ -692,7 +692,7 @@ a {
 }
 
 /* About us */
-.about_us .container {
+.about-us .container {
   padding: 0 var(--safe-pad);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,7 +702,7 @@ a {
           align-items: center;
 }
 
-.about_us__video {
+.about-us__video {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -710,16 +710,16 @@ a {
   height: auto;
 }
 
-.about_us__video a {
+.about-us__video a {
   display: block;
 }
 
-.about_us__video a img {
+.about-us__video a img {
   display: block;
   width: 100%;
 }
 
-.about_us__video::before {
+.about-us__video::before {
   content: "";
   position: absolute;
   top: 0;
@@ -730,7 +730,7 @@ a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2));
 }
 
-.about_us__video::after {
+.about-us__video::after {
   position: absolute;
   content: "";
   width: 70px;
@@ -743,15 +743,15 @@ a {
   transition: var(--transition);
 }
 
-.about_us__video:hover {
+.about-us__video:hover {
   cursor: pointer;
 }
 
-.about_us__video:hover::after {
+.about-us__video:hover::after {
   opacity: 0.9;
 }
 
-.about_us__text {
+.about-us__text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -763,16 +763,16 @@ a {
   padding-bottom: 23px;
 }
 
-.about_us__text p {
+.about-us__text p {
   margin: 0;
   margin-bottom: 1.5em;
 }
 
-.about_us__text p:last-child {
+.about-us__text p:last-child {
   margin-bottom: 0;
 }
 
-.about_us__title {
+.about-us__title {
   margin: 0;
   margin-bottom: 30px;
 }
@@ -1373,7 +1373,7 @@ a {
   .slick-dots {
     left: 5px;
   }
-  .about_us__text {
+  .about-us__text {
     max-width: 500px;
   }
   .main-footer__item {
@@ -1495,16 +1495,16 @@ a {
     -webkit-transform: translate(0, -6px);
             transform: translate(0, -6px);
   }
-  .about_us__text {
+  .about-us__text {
     padding-left: 30px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .about_us__text p {
+  .about-us__text p {
     font-size: 16px;
     margin-bottom: 1.1em;
   }
-  .about_us__title {
+  .about-us__title {
     margin-bottom: 15px;
   }
   .features__img {
@@ -1638,16 +1638,16 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .about_us .container {
+  .about-us .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about_us__video {
+  .about-us__video {
     margin-bottom: 10px;
   }
-  .about_us__text {
+  .about-us__text {
     padding-left: 0;
   }
 }
