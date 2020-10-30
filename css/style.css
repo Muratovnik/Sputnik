@@ -1745,5 +1745,12 @@ a {
         grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 10px;
   }
+  .map-wrap {
+    height: 220px;
+  }
+  .main-footer__copyright {
+    font-size: 11px;
+    padding: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
