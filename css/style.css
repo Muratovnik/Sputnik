@@ -309,8 +309,13 @@ a {
 }
 
 .main-header__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 20px;
-  padding-left: 25px;
   color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
@@ -320,20 +325,17 @@ a {
   white-space: nowrap;
 }
 
-.main-header__tel:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 3px;
-  width: 17px;
-  height: 17px;
-  background-image: url(../img/phone.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: initial;
+.main-header__tel span {
+  margin-left: 8px;
 }
 
-.main-header__tel:hover::after, .main-header__tel:focus::after {
+.main-header__tel img {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.main-header__tel:hover img, .main-header__tel:focus img {
   -webkit-animation-name: tel;
           animation-name: tel;
   -webkit-animation-duration: 0.4s;
@@ -1408,6 +1410,9 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     display: none;
+  }
+  .main-header__tel {
+    margin-right: 5px;
   }
   .is-open {
     display: -webkit-box;
