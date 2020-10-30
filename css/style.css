@@ -1678,5 +1678,20 @@ a {
     margin-left: 20px;
     margin-right: 10px;
   }
+  .hits__list {
+    display: block;
+  }
+  .hits__item {
+    margin-bottom: 30px;
+  }
+  .hits__item:last-child {
+    margin-bottom: 0;
+  }
+  .hits__img {
+    margin-bottom: 10px;
+  }
+  .hits__title {
+    margin-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

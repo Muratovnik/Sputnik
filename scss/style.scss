@@ -1682,6 +1682,22 @@ a {
 
   // HITS
 
+  .hits__list {
+    display: block;
+  }
+  .hits__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .hits__img {
+    margin-bottom: 10px;
+  }
+  .hits__title {
+    margin-bottom: 5px;
+  }
   
 
   // END HITS
