@@ -1734,7 +1734,32 @@ a {
   // END subscribe
 
   // faq
+  
+  .faq__title {
+    padding: 10px 0;
+  
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
 
+    span {
+      max-width: 200px;
+    }
+  }
+  
+  .faq__title-icon {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 22px;
+    background-size: 18px;
+  }
+
+  .faq__content {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
   
   // END faq
 
