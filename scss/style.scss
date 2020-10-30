@@ -1740,16 +1740,15 @@ a {
   
     color: var(--text-color);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
 
     span {
-      max-width: 200px;
+      max-width: 235px;
     }
   }
   
   .faq__title-icon {
-    margin-left: 10px;
     width: 30px;
     height: 30px;
     border-radius: 22px;
@@ -1757,7 +1756,7 @@ a {
   }
 
   .faq__content {
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 20px;
   }
   
