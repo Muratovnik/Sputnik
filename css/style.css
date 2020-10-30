@@ -1553,6 +1553,10 @@ a {
 }
 
 @media screen and (max-width: 750px) {
+  .section__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
   .main-header__navigation {
     margin-right: 0;
   }
@@ -1633,6 +1637,18 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .about_us .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_us__video {
+    margin-bottom: 10px;
+  }
+  .about_us__text {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
