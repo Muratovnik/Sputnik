@@ -1177,6 +1177,10 @@ a {
   font-weight: 400;
 }
 
+.map__title--city:hover {
+  border-bottom: 2px solid var(--red) !important;
+}
+
 .map__wrap {
   height: 457px;
   display: -webkit-box;
